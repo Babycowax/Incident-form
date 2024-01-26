@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-font-family: 'Poppins', sans-serif;   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,7 +12,14 @@ body {
     align-items: center;
     justify-content: center;
     padding:  20px;
-    background: rgb(62, 74, 124);
+    background: #1998ec;
+}
+
+/*Not sure how to style image in div to make it stay in page*/
+.wrapper-image {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -32,13 +39,22 @@ body {
     text-align: center;
 }
 
-.container .form {
-    margin-top: 30px;
+.container h3 {
+  font-size: 1.1rem;
+  color: #333333;
+  font-weight: 500;
+  text-align: center;
 }
 
-h3 {
-    font-weight: 500;
-    border-radius: 1px;
+.container h4 {
+  font-size: 1.1rem;
+  color: #333333;
+  font-weight: 500;
+  text-align: left;
+}
+
+.container .form {
+    margin-top: 30px;
 }
 
 .form .input-box {
@@ -173,6 +189,82 @@ textarea#description {
     outline: none;
   }
 
- 
-  
+input[type="file"]{
+  display: none;
+}
 
+.up{
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1998ec;
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  user-select: none;
+  cursor: poiner;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin: 2%;
+}
+
+label i{
+  font-size: 20px;
+  margin-right: 10px;
+
+}
+
+.up:active{
+  transform:scale(0.9);
+}
+
+.flex-row {
+    display: flex;
+}
+
+.wrapper {
+    border: 1px solid #4b00ff;
+    border-right: 0;
+}
+
+canvas#signature-pad {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+button#clear span {
+    transform: rotate(90deg);
+    display: block;
+}
+
+button#clear {
+    height: 100%;
+    background: #302f31;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.submit-button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  background: #1998ec;
+}
+
+.form button:hover{
+  background: rgb(38, 69, 163);
+}
+  
