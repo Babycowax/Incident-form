@@ -15,11 +15,9 @@ body {
     background: #1998ec;
 }
 
-/*Not sure how to style image in div to make it stay in page*/
-.wrapper-image {
-  width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
+img {
+  width: 100%; /* takes the 100 % width of its container (.box div)*/
+  height: 100%; /* takes the 100 % height of its container (.box div)*/
 }
 
 .container {
@@ -268,3 +266,15 @@ button#clear {
   background: rgb(38, 69, 163);
 }
   
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+
+  /*trying to style the button to be wrapped */
+
+  .upload {
+    flex-wrap: wrap;
+  }
+ 
+}

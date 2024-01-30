@@ -16,10 +16,8 @@
 <body>
 
     <section class="container">
-
-        <!--Not sure how to style image in div to make it stay in page-->
-        <div id="wrapper-image">
-            <img src="Thor Fire ltd FINAL-01.62d52629c40ef7.43364592.jpg" alt="Thor fire logo" width="500" height="`190">
+        <div class="image-box">
+            <img src="Thor Fire ltd FINAL-01.62d52629c40ef7.43364592.jpg" alt="Thor fire logo" width="500" height="190">
         </div>
 
         <br> <br>
@@ -40,6 +38,7 @@
                     <input type="date" required />
                 </div>
             </div>
+
             <br>
 
             <label for="appt">Time of Reportable Incident</label>
@@ -178,12 +177,14 @@
                 <textarea id="incident" name="incident" placeholder="Write something.." style="height:200px"></textarea>
             </div> <br>
 
-            <label for="file">Upload photo of issue</label>
-            <div class="Upload-file">
-                <input type="file" id="uploadBtn">
-                <label for="uploadBtn" class="up"><i class="fa-solid fa-upload"></i>Upload Photo</label>
-            </div> <br>
-
+            <!--Trying to wrap upload button in div to wrap-->
+            <div class="upload"> 
+                <label for="file">Upload photo of issue</label>
+                <div class="Upload-file">
+                    <input type="file" id="uploadBtn">
+                    <label for="uploadBtn" class="up"><i class="fa-solid fa-upload"></i>Upload Photo</label>
+                </div> <br>
+            </div>
             <label for="suggestion">Safety suggestion</label>
             <div class="row">
                 <textarea id="incident" name="incident" placeholder="Write something.." style="height:200px"></textarea>
@@ -340,4 +341,5 @@
         </form>
     </section>
 </body>
+
 </html>
