@@ -272,9 +272,7 @@ button#clear {
   }
 
   /*trying to style the button to be wrapped */
-
-  .upload {
+  .upload .up {
     flex-wrap: wrap;
   }
- 
 }
