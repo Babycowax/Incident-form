@@ -78,10 +78,10 @@ img {
     padding: 0 15px;
 }
 
-
 .form .column {
     display: flex;
     column-gap: 15px;
+    margin-top: -2% ; /*Added this to bring the title 'person reporting the issue' closer to the box below it*/
 }
 
 textarea#description {
@@ -127,6 +127,10 @@ textarea#description {
     cursor: pointer;
     height: 0;
     width: 0;
+  }
+
+  #appt {
+    margin-top: -100%;
   }
   
   /* Create a custom checkbox */
