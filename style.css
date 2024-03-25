@@ -60,7 +60,6 @@ img {
     margin-top: 20px;
 }
 
-
 .input-box label {
     color: #333;
 }
@@ -84,18 +83,7 @@ img {
     margin-top: -2% ; /*Added this to bring the title 'person reporting the issue' closer to the box below it*/
 }
 
-textarea#description {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline:none;
-    font-size: 1rem;
-    color: #707070;
-    margin-top: px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-}
+
 
 .select-box select {
     height: 100%;
@@ -249,7 +237,6 @@ button#clear {
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    
 }
 
 .submit-button {
